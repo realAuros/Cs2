@@ -1,12 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
 // 2026-04-08 13:17:35.780019300 UTC
 
-#![allow(non_upper_case_globals, unused)]
-
-pub mod cs2_dumper {
-    pub mod offsets {
+pub const cs2_dumper = struct {
+    pub const offsets = struct {
         // Module: client.dll
-        pub mod client_dll {
+        pub const client_dll = struct {
             pub const dwCSGOInput: usize = 0x231E330;
             pub const dwEntityList: usize = 0x24B3268;
             pub const dwGameEntitySystem: usize = 0x24B3268;
@@ -24,9 +22,9 @@ pub mod cs2_dumper {
             pub const dwViewMatrix: usize = 0x2313F10;
             pub const dwViewRender: usize = 0x2314328;
             pub const dwWeaponC4: usize = 0x229D2B0;
-        }
+        };
         // Module: engine2.dll
-        pub mod engine2_dll {
+        pub const engine2_dll = struct {
             pub const dwBuildNumber: usize = 0x60E514;
             pub const dwNetworkGameClient: usize = 0x9095D0;
             pub const dwNetworkGameClient_clientTickCount: usize = 0x378;
@@ -38,19 +36,19 @@ pub mod cs2_dumper {
             pub const dwNetworkGameClient_signOnState: usize = 0x230;
             pub const dwWindowHeight: usize = 0x90D99C;
             pub const dwWindowWidth: usize = 0x90D998;
-        }
+        };
         // Module: inputsystem.dll
-        pub mod inputsystem_dll {
+        pub const inputsystem_dll = struct {
             pub const dwInputSystem: usize = 0x45AD0;
-        }
+        };
         // Module: matchmaking.dll
-        pub mod matchmaking_dll {
+        pub const matchmaking_dll = struct {
             pub const dwGameTypes: usize = 0x1B8000;
-        }
+        };
         // Module: soundsystem.dll
-        pub mod soundsystem_dll {
+        pub const soundsystem_dll = struct {
             pub const dwSoundSystem: usize = 0x4F3470;
             pub const dwSoundSystem_engineViewData: usize = 0x7C;
-        }
-    }
-}
+        };
+    };
+};
